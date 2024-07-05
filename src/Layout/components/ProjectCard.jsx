@@ -1,27 +1,95 @@
-import myGiphy from "../components/Project/Designer.png"
+import { Link } from "react-router-dom";
+import myGiphy from "../components/Project/Designer.png";
+import portfolio from "../components/Project/portfoliologo.png";
+import { DiGit } from "react-icons/di";
+import { TbLivePhoto } from "react-icons/tb";
 
 const ProjectCard = () => {
   return (
     <div className="w-full flex lg:flex-row flex-col gap-10 p-2">
-      <div className="viewbox flex flex-col text-justify h-50 p-5">
+      <div className="viewbox lg:w-3/4 md:w-3/4 flex flex-col text-justify  p-5">
+        <img src={myGiphy} alt="logo" />
+        <div className="flex justify-center items-center flex-col">
+        <p className="text-sm flex flex-col items-center">
+        <span className="text-purple-500 text-xl">MURPH</span> is an AI
+            chatbot && Developer buddy, that helps to solves their bugs
+          </p>
+          <div className="flex gap-10  p-5 ">
+            <Link
+              target="blank"
+              className="button-85 w-max flex gap-2 items-center"
+              to={"https://sagar-chhetri.vercel.app/"}
+            >
+            <TbLivePhoto size={20} />
+              Live App
+            </Link>
+            <Link
 
-     <img src={myGiphy} alt="logo"/>
-        type and scrambled it to make a type specimen book. It has survived not
-        only five centuries, but also the leap into electronic typesetting,
-        re
-        versioni
+              target="blank"
+              className="button-85 w-max flex gap-2  items-center"
+              to={"https://github.com/iamsagar07/GIPHY-CLONE"}
+            >
+            <DiGit size={20} />
+              Code
+            </Link>
+          </div>
+        </div>
       </div>
-      <div className="project-card-view flex text-justify  p-5">
-        type and scrambled it to make a type specimen book. It has survived not
-        only five centuries, but also the leap into electronic typesetting,
-        re
-        versioni
+      <div className="viewbox lg:w-3/4 md:w-3/4 flex flex-col text-justify  p-5">
+        <img src={portfolio} alt="logo" />
+        <div className="flex justify-center items-center flex-col">
+        <p className="text-sm flex flex-col items-center">
+        <span className="text-purple-500 text-xl">MURPH</span> is an AI
+            chatbot && Developer buddy, that helps to solves their bugs
+          </p>
+          <div className="flex gap-10  p-5 ">
+            <Link
+              target="blank"
+              className="button-85 w-max flex gap-2 items-center"
+              to={"https://sagar-chhetri.vercel.app/"}
+            >
+            <TbLivePhoto size={20} />
+              Live App
+            </Link>
+            <Link
+
+              target="blank"
+              className="button-85 w-max flex gap-2  items-center"
+              to={"https://github.com/iamsagar07/GIPHY-CLONE"}
+            >
+            <DiGit size={20} />
+              Code
+            </Link>
+          </div>
+        </div>
       </div>
-      <div className="project-card-view flex text-justify  p-5">
-        type and scrambled it to make a type specimen book. It has survived not
-        only five centuries, but also the leap into electronic typesetting,
-        re
-        versioni
+      <div className="viewbox lg:w-3/4 md:w-3/4 flex flex-col text-justify  p-5">
+        <img src={myGiphy} alt="logo" />
+        <div className="flex justify-center items-center flex-col">
+          <p className="text-sm flex flex-col items-center">
+            <span className="text-purple-500 text-xl">MURPH</span> is an AI
+            chatbot && Developer buddy, that helps to solves their bugs
+          </p>
+          <div className="flex gap-10  p-5 ">
+            <Link
+              target="blank"
+              className="button-85 w-max flex gap-2 items-center"
+              to={"https://sagar-chhetri.vercel.app/"}
+            >
+            <TbLivePhoto size={20} />
+              Live App
+            </Link>
+            <Link
+
+              target="blank"
+              className="button-85 w-max flex gap-2  items-center"
+              to={"https://sagar-chhetri.vercel.app/"}
+            >
+            <DiGit size={20} />
+              Code
+            </Link>
+          </div>
+        </div>
       </div>
     </div>
   );
