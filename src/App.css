@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* How to create custom classes in tailwind css */
+/** Answer below */
+@layer utilities {
+  .gradient {
+    background-image: linear-gradient(to left, rgb(27 20 41), rgb(20 15 35));
+    background-position: cover;
+    background-repeat: no-repeat;
+  }
+  .bg {
+    background-image: url(./bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: inherit;
+  }
+
+  @keyframes slideDown {
+    0% {
+      transform: translateY(-10px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  .dropdown {
+    animation-name: slideDown;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+  }
+
+  .faded-text {
+    @apply font-bold text-sm text-gray-400;
+  }
+  .divider {
+    @apply w-full h-0.5 my-6 bg-gray-800;
+  }
+  .hover {
+    transition: all 4s ease-in-out;
+    transform: scale(1.2);
+  }
+
+  .colors {
+    @apply bg-gradient-to-r from-teal-600 via-blue-600 to-pink-600;
+  }
+
+  .shadow {
+    box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.137) !important;
+  }
+
+  .custom-border {
+    cursor: pointer;
+    transition: all 0.4s ease 0s !important;
+  }
+  .custom-border:hover {
+    transform: scale(1.05) !important;
+    overflow: hidden !important;
+    filter: drop-shadow(0 0 10px #fffdef);
+  }
+
+  .element {
+    width: 0;
+    transition: width 5s ease-in-out;
+  }
+
+  .after::after {
+    content: "";
+    display: block;
+    height: 3px;
+    transition-property: width;
+    transition-timing-function: ease;
+    transition-duration: 0.3s;
+    left: 0;
+  }
+  .after:hover::after {
+    width: fit-content;
+  }
+
+  .custom {
+    transition: background-color 0.3s ease-out, opacity 0.3s ease-out;
+    background-color: #181a27;
+    opacity: 1;
+  }
+
+  .viewbox {
+    @apply [box-shadow:0_4px_5px_3px_rgba(119,_53,_136,_0.459)] !text-[white] !bg-transparent  [transition:all_0.5s_ease_0s]
+    hover:!scale-[1.02] hover:!overflow-hidden hover:[box-shadow:0_4px_4px_5px_rgba(129,_72,_144,_0.561)];
+  }
+}
