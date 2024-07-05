@@ -14,10 +14,10 @@ const ProjectCard = () => {
         <span className="text-purple-500 text-xl">MURPH</span> is an AI
             chatbot && Developer buddy, that helps to solves their bugs
           </p>
-          <div className="flex gap-10  p-5 ">
+          <div className="flex lg:gap-10 md:gap-10 gap-8  p-5 ">
             <Link
               target="blank"
-              className="button-85 w-max flex gap-2 items-center"
+              className="button-85 w-max flex gap-2 items-center text-sm lg:text-lg md:text-lg"
               to={"https://sagar-chhetri.vercel.app/"}
             >
             <TbLivePhoto size={20} />
@@ -26,8 +26,8 @@ const ProjectCard = () => {
             <Link
 
               target="blank"
-              className="button-85 w-max flex gap-2  items-center"
-              to={"https://github.com/iamsagar07/GIPHY-CLONE"}
+              className="button-85 lg:min-w-max lg:text-lg w-max text-sm flex gap-2 items-center"
+              to={"https://sagar-chhetri.vercel.app/"}
             >
             <DiGit size={20} />
               Code
@@ -42,10 +42,10 @@ const ProjectCard = () => {
         <span className="text-purple-500 text-xl">MURPH</span> is an AI
             chatbot && Developer buddy, that helps to solves their bugs
           </p>
-          <div className="flex gap-10  p-5 ">
+          <div className="flex lg:gap-10 md:gap-10 gap-8  p-5 ">
             <Link
               target="blank"
-              className="button-85 w-max flex gap-2 items-center"
+              className="button-85 w-max flex gap-2 items-center text-sm lg:text-lg md:text-lg"
               to={"https://sagar-chhetri.vercel.app/"}
             >
             <TbLivePhoto size={20} />
@@ -54,7 +54,7 @@ const ProjectCard = () => {
             <Link
 
               target="blank"
-              className="button-85 w-max flex gap-2  items-center"
+              className="button-85 lg:min-w-max lg:text-lg w-max text-sm flex gap-2 items-center"
               to={"https://github.com/iamsagar07/GIPHY-CLONE"}
             >
             <DiGit size={20} />
@@ -70,10 +70,10 @@ const ProjectCard = () => {
             <span className="text-purple-500 text-xl">MURPH</span> is an AI
             chatbot && Developer buddy, that helps to solves their bugs
           </p>
-          <div className="flex gap-10  p-5 ">
+          <div className="flex lg:gap-10 md:gap-10 gap-8  p-5 ">
             <Link
               target="blank"
-              className="button-85 w-max flex gap-2 items-center"
+              className="button-85 lg:min-w-max lg:text-lg w-max text-sm flex gap-2 items-center"
               to={"https://sagar-chhetri.vercel.app/"}
             >
             <TbLivePhoto size={20} />
