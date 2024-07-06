@@ -1,12 +1,14 @@
 import { useState } from "react";
 import Type from "../Layout/components/Type";
 import myImg from "../assets/avatar.svg";
+import coder from '../assets/coder.png';
 import {
   AiFillGithub,
   AiOutlineTwitter,
   AiFillInstagram,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+
 
 const Homepage = () => {
   return (
@@ -22,14 +24,14 @@ const Homepage = () => {
                 </span>
               </h1>
               <h1>
-                I am <strong className="text-blue-300">SAGAR CHHETRI</strong>
+                I am <strong className="text-purple-500">SAGAR CHHETRI</strong>
               </h1>
             </div>
 
             <div className="text-3xl lg:text-5xl py-5 px-10 flex gap-10 ">
               <div className="flex-1">
                 <h1>A</h1>
-                <h1 className="text-blue-300">
+                <h1 className="text-purple-500">
                   {" "}
                   <Type />
                 </h1>
@@ -37,13 +39,13 @@ const Homepage = () => {
             </div>
           </div>
           <div className="lg:block lg:flex-1 w-3/46 lg:w-auto">
-            <img src="./empty.png" alt="dev_log" />
+            <img src={coder} alt="dev_log" />
           </div>
         </div>
 
         <div className="w-full flex items-center flex-col justify-center mb-10">
           <h1 className="py-10 text-2xl lg:text-4xl">
-            LET ME <strong className="text-blue-300">INTRODUCE</strong> MYSELF
+            LET ME <strong className="text-purple-500">INTRODUCE</strong> MYSELF
           </h1>
           <div className="flex flex-col lg:flex-row md:flex-row justify-center items-center lg:gap-10 ">
             <ul className="w-full p-5 lg:w-3/5 lg:text-xl flex flex-col  text-justify justify-center gap-8 lg:items-start">
@@ -91,7 +93,7 @@ const Homepage = () => {
           <ul className="w-full flex flex-row gap-16">
               <li className="rounded-full bg-white">
                 <a
-                  href="https://github.com/soumyajit4419"
+                  href="https://github.com/iamsagar07"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -111,7 +113,7 @@ const Homepage = () => {
               </li>
               <li className="rounded-full  bg-white">
                 <a
-                  href="https://www.linkedin.com/in/soumyajit4419/"
+                  href="https://www.linkedin.com/in/sagar-chhetri-2a3731278/"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -121,7 +123,7 @@ const Homepage = () => {
               </li>
               <li className="rounded-full bg-white">
                 <a
-                  href="https://www.instagram.com/soumyajit4419"
+                  href="https://www.instagram.com/sagar.chhetri__?igsh=dG9maXJ3bHQyeTdv"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour home-social-icons"

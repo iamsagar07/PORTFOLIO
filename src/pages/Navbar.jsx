@@ -6,7 +6,9 @@ import { FaGithub } from "react-icons/fa";
 import { FaStar } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import { LuLayoutDashboard } from "react-icons/lu";
+import { IoMdClose } from "react-icons/io";
 import { useState } from "react";
+
 import "../App.css";
 const Navbar = () => {
   const [active, setActive] = useState(null);
@@ -16,7 +18,7 @@ const Navbar = () => {
   const handleCick = (e) => {
     if (e !== null) {
       setActive(e);
-      setDropdown(false)
+      setDropdown(false);
     }
   };
 
@@ -29,9 +31,10 @@ const Navbar = () => {
     setHover(null);
   };
 
-
   return (
-    <div className={` w-full flex items-center py-3 px-20 justify-center fixed  sm:w-full custom md:bg-transparent lg:bg-transparent xl:bg-transparent ${scroll ? "custom" : ""}`}>
+    <div
+      className={` w-full flex items-center py-3 px-20 justify-center fixed transition-all duration-300 ease-out bg-purple-950 opacity-100 sm:w-full  md:bg-transparent lg:bg-transparent xl:bg-transparent`}
+    >
       <Link
         to={"/"}
         className="block font-bold text-purple-500 w-96 text-5xl cursor-pointer py-0 sm:px-8"
@@ -105,7 +108,7 @@ const Navbar = () => {
               <div className="hover animate-pulse w-auto h-1 bg-purple-500"></div>
             )}
           </div>
-          <Link className="flex justify-center items-center gap-2">
+          <Link to={'https://github.com/iamsagar07/PORTFOLIO'} target="_blank" className="flex justify-center items-center gap-2">
             <button className="w-20 h-8 bg-purple-800 flex justify-center items-center gap-4 hover:animate-bounce hover:bg-purple-950 rounded-lg">
               <FaGithub />
               <FaStar />
@@ -114,10 +117,16 @@ const Navbar = () => {
         </div>
       </div>
       <div className="block sm:hidden xl:hidden md:hidden lg:hidden cursor-pointer -mx-10 ">
-        <LuLayoutDashboard onClick={() => setDropdown(!dropdown)} size={30} />
+        {dropdown ? (
+          <IoMdClose className="cross" onClick={() => setDropdown(!dropdown)} size={30} />
+        ) : (
+          <div className="icon-container">
+          <LuLayoutDashboard className="" onClick={() => setDropdown(!dropdown)} size={30} />
+          </div>
+        )}{" "}
       </div>
       {dropdown && (
-        <div className="absolute top-14 px-10 pt-6 pb-9 w-full dropdown  colors flex justify-center items-center  ">
+        <div className="absolute top-14 px-10 pt-6 pb-9 w-full dropdown bg-purple-950  flex justify-center">
           <div className="">
             <div className="flex flex-col gap-5">
               <div>
@@ -161,8 +170,8 @@ const Navbar = () => {
                   <span>Resume</span>
                 </Link>
               </div>
-              <Link className="flex justify-center items-center gap-2">
-                <button className="w-20 h-8 bg-purple-800 flex justify-center items-center gap-4 hover:animate-bounce hover:bg-purple-950 rounded-lg">
+              <Link to={'https://github.com/iamsagar07/PORTFOLIO'} target="_blank" className="flex justify-center items-center gap-2">
+                <button className="w-20 h-8 bg-black   flex justify-center items-center gap-4 hover:animate-bounce rounded-lg">
                   <FaGithub />
                   <FaStar />
                 </button>
