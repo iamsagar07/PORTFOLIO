@@ -1,5 +1,5 @@
-import myResume from "../Layout/components/Project/moiresume.png";
-import pdfResume from "../assets/sagarChhetriOk.pdf";
+import myResume from "../assets/CV.png";
+import pdfCV from "../assets/sagarChhetriResume.pdf";
 
 const Resume = () => {
   return (
@@ -19,7 +19,7 @@ const Resume = () => {
           </svg>
           <span>
             {" "}
-            <a href={pdfResume} download="SagarChhetriResume.pdf">
+            <a href={pdfCV} download="SagarChhetriResume.pdf">
               Download CV
             </a>
           </span>
@@ -27,7 +27,7 @@ const Resume = () => {
       </div>
 
       <div className="resume">
-        <img className="" src={myResume} alt="resume" />
+        <img className="" width={500} src={myResume} alt="resume" />
       </div>
       <div className="">
       <button className="Download-button w-max  hover:bg-purple-800">
@@ -44,7 +44,7 @@ const Resume = () => {
           </svg>
           <span>
             {" "}
-            <a href={pdfResume} download="SagarChhetriResume.pdf">
+            <a href={pdfCV} download="SagarChhetriResume.pdf">
               Download CV
             </a>
           </span>
