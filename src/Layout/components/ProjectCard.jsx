@@ -11,14 +11,13 @@ const ProjectCard = () => {
         <img src={myGiphy} alt="logo" />
         <div className="flex justify-center items-center flex-col">
           <p className="text-sm flex flex-col items-center">
-            <span className="text-purple-500 text-xl">MURPH</span> is an AI
-            chatbot && Developer buddy, that helps to solves their bugs
+            <span className="text-purple-500 text-xl">GIPHY</span> Where one can find all world's GIFs
           </p>
           <div className="flex lg:gap-10 md:gap-10 gap-8  p-5 ">
             <Link
               target="blank"
               className="button-85 w-max flex gap-2 items-center text-sm lg:text-lg md:text-lg"
-              to={"https://sagar-chhetri.vercel.app/"}
+              to={"https://hisagar-giphy.vercel.app/"}
             >
               <TbLivePhoto size={20} />
               Live App
@@ -45,7 +44,7 @@ const ProjectCard = () => {
             <Link
               target="blank"
               className="button-85 w-max flex gap-2 items-center text-sm lg:text-lg md:text-lg"
-              to={"https://hisagar-giphy.vercel.app/"}
+              to={""}
             >
               <TbLivePhoto size={20} />
               Live App
@@ -53,7 +52,7 @@ const ProjectCard = () => {
             <Link
               target="blank"
               className="button-85 lg:min-w-max lg:text-lg w-max text-sm flex gap-2 items-center"
-              to={"https://sagar-chhetri.vercel.app/"}
+              to={"https://github.com/iamsagar07/murphy-ai"}
             >
               <DiGit size={20} />
               Code
@@ -65,7 +64,7 @@ const ProjectCard = () => {
         <img src={myGiphy} alt="logo" />
         <div className="flex justify-center items-center flex-col">
           <p className="text-sm flex flex-col items-center">
-            <span className="text-purple-500 text-xl">MURPH</span> is an AI
+            <span className="text-purple-500 text-xl">PORTFOLIO</span> is an AI
             chatbot && Developer buddy, that helps to solves their bugs
           </p>
           <div className="flex lg:gap-10 md:gap-10 gap-8  p-5 ">
@@ -80,7 +79,7 @@ const ProjectCard = () => {
             <Link
               target="blank"
               className="button-85 w-max flex gap-2  items-center"
-              to={"https://sagar-chhetri.vercel.app/"}
+              to={"https://github.com/iamsagar07/PORTFOLIO"}
             >
               <DiGit size={20} />
               Code
