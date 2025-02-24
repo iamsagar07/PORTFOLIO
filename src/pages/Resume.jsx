@@ -1,11 +1,11 @@
-import myResume from "../assets/CV.png";
-import pdfCV from "../assets/sagarChhetriResume.pdf";
+import myResume from "../assets/chhetri.png";
+import pdfCV from "../assets/sagarishere.pdf";
 
 const Resume = () => {
   return (
     <div className=" text-white min-h-screen w-full flex flex-col gap-24 items-center p-32">
-       <div className=" hidden md:block lg:block">
-      <button className="Download-button hover:bg-purple-800">
+      <div className=" hidden md:block lg:block">
+        <button className="Download-button hover:bg-purple-800">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             height="16"
@@ -30,7 +30,7 @@ const Resume = () => {
         <img className="" width={500} src={myResume} alt="resume" />
       </div>
       <div className="">
-      <button className="Download-button w-max  hover:bg-purple-800">
+        <button className="Download-button w-max  hover:bg-purple-800">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             height="16"
